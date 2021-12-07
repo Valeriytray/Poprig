@@ -38,6 +38,7 @@ namespace gaaaa
             System.Windows.Forms.Label iDLabel1;
             System.Windows.Forms.Label titleLabel1;
             System.Windows.Forms.Label iDLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.agentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iNNTextBox = new System.Windows.Forms.TextBox();
@@ -263,6 +264,7 @@ namespace gaaaa
             this.Controls.Add(this.priorityTextBox);
             this.Controls.Add(titleLabel);
             this.Controls.Add(this.titleTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Добавить агента";
             this.Load += new System.EventHandler(this.Form2_Load);
